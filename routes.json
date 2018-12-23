@@ -1,0 +1,5 @@
+{
+  "routes": [
+    ["GET", "/", "\\ab\\Front\\Controller\\TwigByUri"]
+  ]
+}

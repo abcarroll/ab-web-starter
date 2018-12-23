@@ -1,0 +1,21 @@
+{
+    "name": "abcarroll/ab-web-starter",
+    "description": "Simple router and PSR-7 handler",
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.2",
+        "league/route": "^4.2",
+        "zendframework/zend-diactoros": "^2.1",
+        "zendframework/zend-httphandlerrunner": "^1.0",
+        "twig/twig": "^2.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "ab\\Front\\": "src/"
+        }
+    },
+    "scripts": {
+        "serve": "php -d max_execution_time=0 -S 0.0.0.0:8080 public/dev-router.php",
+        "serve-production": "php -d max_execution_time=0 -S 0.0.0.0:80 public/dev-router.php"
+    }
+}
